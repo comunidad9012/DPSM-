@@ -1,0 +1,77 @@
+/* Main Wrapper */
+
+.addproductWrapper{
+    @apply w-full h-[89vh] overflow-hidden p-5 flex flex-col items-center ;
+    /* @apply bg-red-400; */
+}
+
+/* Title */
+
+.titleContainer{
+    @apply w-full flex justify-center select-none;
+}
+.title{
+    @apply text-xl text-slate-700 border-b border-b-indigo-300 border-opacity-30 px-10 text-opacity-100;
+}
+.title:hover{
+    box-shadow: inset 0px -5px 2px -4px rgba(99, 102, 241, .3);
+}
+
+/* Form */
+
+.formMain{
+    @apply flex flex-col gap-2 items-center;
+}
+.formItem{
+    @apply border-none bg-transparent border-b pl-1;
+    @apply w-[40vw] outline-none;
+    @apply bg-indigo-100 bg-opacity-10 text-slate-700;
+    @apply cursor-pointer;
+}
+.formItem::placeholder{
+    @apply text-slate-600 text-opacity-90;
+}
+.formItem:not([value=""]), .formItem:focus, .formItem:hover{
+    @apply bg-indigo-300 bg-opacity-30 shadow-sm;
+}
+.formItemImage{
+    @apply hidden;
+}
+.formItemStatus{
+    @apply bg-indigo-100 bg-opacity-10 px-5 flex h-full;
+    @apply text-slate-600 text-opacity-100;
+    @apply select-none;
+}
+.statusItem{
+    @apply mr-2 py-1 cursor-pointer;
+}
+.activeStatus{
+    color:orange !important;
+}
+
+/* Buttons */
+
+.uploadButton{
+    @apply p-2 absolute bottom-10 right-10 px-10;
+    @apply bg-gradient-to-tl from-indigo-200 to-violet-200;
+}
+.uploadButton:hover{
+    @apply shadow-md;
+    @apply animate-pulse;
+    @apply bg-gradient-to-br from-blue-300 to-pink-300;
+}
+.imageButton{
+    @apply p-2 shadow-sm;
+    @apply border-none bg-transparent border-b pl-1;
+    @apply w-[40vw] outline-none;
+    @apply bg-indigo-100 bg-opacity-10 text-slate-700;
+}
+.imageButton:hover{
+    @apply bg-indigo-300 shadow-md bg-opacity-30;
+}
+.deleteImageButton:hover{
+    @apply bg-red-400 bg-opacity-60;
+}
+.deleteImageButton:hover > span{
+    display: block;
+}

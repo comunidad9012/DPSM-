@@ -1,0 +1,44 @@
+/* StockPage.module.css */
+.stockWrapper{
+    @apply w-full h-[89vh] overflow-hidden p-5 flex flex-col items-center;
+}
+.title {
+    @apply text-xl text-slate-700 border-b border-b-indigo-300 border-opacity-30 px-10 mb-5 text-opacity-100;
+}
+  
+.mainList {
+    list-style: none;
+    padding: 0;
+    @apply w-full flex flex-col gap-1 border bg-slate-300 bg-opacity-20;
+  }
+
+.listItem{
+    @apply w-full flex justify-start px-1.5;
+}
+.listItemTitle{
+    @apply w-full flex justify-start px-1.5  bg-indigo-300;
+}
+.buttonContainer{
+    @apply w-2/6 justify-end hidden;
+}
+.proditem{
+    @apply w-2/6 py-1;
+}
+.proditemTitle{
+    @apply text-xl bg-opacity-60;
+}
+.genButton {
+    @apply text-slate-200 px-5 py-1;
+}
+.listItem:hover{
+    @apply bg-indigo-400 bg-opacity-60;
+}
+.listItem:hover > .buttonContainer{
+    @apply flex;
+}
+.deleteButton{
+    @apply bg-red-500;
+}
+.editButton{
+    @apply bg-teal-500 ml-2;
+}
